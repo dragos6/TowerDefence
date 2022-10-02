@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 5574996488766872624}
   - component: {fileID: 7261881853547039239}
   - component: {fileID: 2776755655341593139}
-  m_Layer: 0
+  - component: {fileID: 209043372059262709}
+  - component: {fileID: 1016837521528187270}
+  - component: {fileID: -7561198499854474396}
+  m_Layer: 8
   m_Name: Enemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,3 +108,79 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &209043372059262709
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4485665070104193412}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1016837521528187270
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4485665070104193412}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 0.696}
+    newSize: {x: 1, y: 0.696}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.45}
+  m_EdgeRadius: 0
+--- !u!114 &-7561198499854474396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4485665070104193412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2a9583e217add48b528e112eadf7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 0
+  exitPoint: {fileID: 1603585255960540587, guid: dfc7d1c8266f0134a980fd997c0bcc7d, type: 3}
+  waypoint:
+  - {fileID: 8000961022923013366, guid: f2fff44369078a44d93f1fbeccafcfa8, type: 3}
+  - {fileID: 6274693240427931406, guid: 7636e6a67a775db4a990ca9923defb75, type: 3}
+  - {fileID: 6122000241444565081, guid: b630eaa5f68dee043b772599d2d8d695, type: 3}
+  - {fileID: 6963083466822766881, guid: 8121f634a33484940a24070912f884b0, type: 3}
+  - {fileID: 1480910966715196937, guid: db3f15fe75ca51d468fabd74fa502ae1, type: 3}
+  - {fileID: 5175066970114101866, guid: fae6490c4569c0946ab0b91f0f5049b5, type: 3}
+  - {fileID: 8331800630602691474, guid: 6c78091a4ba639e45b8a744ca58ea791, type: 3}
+  - {fileID: 6947294450311230898, guid: 78051381997fbda4bb08644ecc11a426, type: 3}
+  - {fileID: 5413140125254802053, guid: 54a48c70f408b0148a0709b13c98ae61, type: 3}
+  - {fileID: 4271127998755975354, guid: 5724b35fd865def46a91bcdbefdad3ef, type: 3}
+  - {fileID: 2181322619756629269, guid: 90071027c50f8ce47b500798c9bcee2a, type: 3}
+  - {fileID: 9131729731829198316, guid: 6da3bb92913b83c4390da5ad57bc04b5, type: 3}
+  - {fileID: 3038366175359054734, guid: 3a1ade0ba0dc4bf46b5b6ccd20014964, type: 3}
+  navigationUpdate: 0.05
