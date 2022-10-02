@@ -2,18 +2,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int target = 0;
-    public Transform exitPoint;
-    public GameObject[] waypoint;
-    public float navigationUpdate;
-
-    //private Transform enemy;
+    [SerializeField] private Transform exitPoint;
+    [SerializeField] private GameObject[] waypoint;
+    [SerializeField] private float navigationUpdate;
+    
     private float navigationTime = 0;
-
-    private void Start()
-    {
-        //enemy = GetComponent<Transform>();
-    }
+    private int target = 0;
 
     private void Update()
     {
@@ -40,11 +34,11 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Checkpoint") {target++; }
-        else if(collision.tag =="Finish") 
+        if (collision.tag == "Checkpoint") { target++; }
+        else if (collision.tag == "Finish")
         {
             GameManager.Instance.RemoveEnemyFromScreen();
-            Destroy(gameObject); 
+            Destroy(gameObject);
 
         }
     }
