@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7108893685232230215}
   - component: {fileID: 3683292150085746548}
   - component: {fileID: 8653049756912287029}
+  - component: {fileID: -3476024461702052954}
   m_Layer: 8
   m_Name: Enemy2
   m_TagString: Enemy
@@ -154,3 +155,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &-3476024461702052954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7108893685232230208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2a9583e217add48b528e112eadf7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 0
+  exitPoint: {fileID: 1603585255960540587, guid: dfc7d1c8266f0134a980fd997c0bcc7d, type: 3}
+  waypoint:
+  - {fileID: 8000961022923013366, guid: f2fff44369078a44d93f1fbeccafcfa8, type: 3}
+  - {fileID: 6274693240427931406, guid: 7636e6a67a775db4a990ca9923defb75, type: 3}
+  - {fileID: 6122000241444565081, guid: b630eaa5f68dee043b772599d2d8d695, type: 3}
+  - {fileID: 6963083466822766881, guid: 8121f634a33484940a24070912f884b0, type: 3}
+  - {fileID: 1480910966715196937, guid: db3f15fe75ca51d468fabd74fa502ae1, type: 3}
+  - {fileID: 5175066970114101866, guid: fae6490c4569c0946ab0b91f0f5049b5, type: 3}
+  - {fileID: 8331800630602691474, guid: 6c78091a4ba639e45b8a744ca58ea791, type: 3}
+  - {fileID: 6947294450311230898, guid: 78051381997fbda4bb08644ecc11a426, type: 3}
+  - {fileID: 5413140125254802053, guid: 54a48c70f408b0148a0709b13c98ae61, type: 3}
+  - {fileID: 4271127998755975354, guid: 5724b35fd865def46a91bcdbefdad3ef, type: 3}
+  - {fileID: 2181322619756629269, guid: 90071027c50f8ce47b500798c9bcee2a, type: 3}
+  - {fileID: 9131729731829198316, guid: 6da3bb92913b83c4390da5ad57bc04b5, type: 3}
+  - {fileID: 3038366175359054734, guid: 3a1ade0ba0dc4bf46b5b6ccd20014964, type: 3}
+  navigationUpdate: 0.05
