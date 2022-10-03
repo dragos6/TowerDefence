@@ -9,6 +9,8 @@ TagManager:
   - BuildSite
   - Ground
   - Tower
+  - BuildSiteFull
+  - Projectiles
   layers:
   - Default
   - TransparentFX
@@ -48,4 +50,7 @@ TagManager:
     locked: 0
   - name: Enviroment
     uniqueID: 506653709
+    locked: 0
+  - name: Units
+    uniqueID: 2868909207
     locked: 0

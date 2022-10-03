@@ -9,6 +9,10 @@ public class Enemy : MonoBehaviour
     private float navigationTime = 0;
     private int target = 0;
 
+    private void Start()
+    {
+            GameManager.Instance.RegisterEnemy(this);
+    }
     private void Update()
     {
 
@@ -37,8 +41,8 @@ public class Enemy : MonoBehaviour
         if (collision.tag == "Checkpoint") { target++; }
         else if (collision.tag == "Finish")
         {
-            GameManager.Instance.RemoveEnemyFromScreen();
-            Destroy(gameObject);
+
+           GameManager.Instance.UnregisterEnemy(this);
 
         }
     }

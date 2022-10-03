@@ -8766,8 +8766,8 @@ MonoBehaviour:
   - {fileID: 5582983122125431586, guid: 03b56ffc4d77d1d4988bb4c8e625812c, type: 3}
   maxEnemiesOnScreen: 8
   totalEnemies: 8
-  enemiesPerSpawn: 1
-  enemiesOnScreen: 0
+  enemiesPerSpawn: 2
+  enemyList: []
 --- !u!1 &525843230
 GameObject:
   m_ObjectHideFlags: 0
@@ -9101,6 +9101,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.85333335, y: 0.85333335}
   m_EdgeRadius: 0
+--- !u!1 &561003764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6157681456034462294, guid: 9155b2345e379fb4686e0edf2ca0ed24, type: 3}
+  m_PrefabInstance: {fileID: 6157681455243602715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &563762002
 GameObject:
   m_ObjectHideFlags: 0
@@ -32048,7 +32053,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6157681456034462293, guid: 9155b2345e379fb4686e0edf2ca0ed24, type: 3}
   m_PrefabInstance: {fileID: 6157681455243602715}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 561003764}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 183c8de6e2a62b341967a9f8abd42f25, type: 3}
@@ -32059,6 +32064,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6157681456034462292, guid: 9155b2345e379fb4686e0edf2ca0ed24, type: 3}
   m_PrefabInstance: {fileID: 6157681455243602715}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1899991376
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561003764}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1426058089
+  m_SortingLayer: 2
+  m_SortingOrder: 6
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1902401550
 GameObject:
   m_ObjectHideFlags: 0
@@ -38109,6 +38166,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 693084960}
     m_Modifications:
+    - target: {fileID: 2672402750831931171, guid: 88bc1308c16950c498bcf7aa2a50e654, type: 3}
+      propertyPath: dragSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b7d599a84b0fb4498b9bcd538ec5e28b, type: 3}
     - target: {fileID: 6664028123723199016, guid: 88bc1308c16950c498bcf7aa2a50e654, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -38210,6 +38271,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 693084960}
     m_Modifications:
+    - target: {fileID: 1966521336989822006, guid: 8bdd4ba1d6d4a3a4d81b4000e68d2abd, type: 3}
+      propertyPath: dragSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a78a3f1f9859348e8b266f807ae7b6b8, type: 3}
     - target: {fileID: 6998291863063655210, guid: 8bdd4ba1d6d4a3a4d81b4000e68d2abd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -38392,6 +38457,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 693084960}
     m_Modifications:
+    - target: {fileID: 2834188726670759652, guid: 72e6e6c2eff62764684816ed11a8eb06, type: 3}
+      propertyPath: dragSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 14a5806ccc0074646890772edc6a5102, type: 3}
     - target: {fileID: 8890337041088794674, guid: 72e6e6c2eff62764684816ed11a8eb06, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
