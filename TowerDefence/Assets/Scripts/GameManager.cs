@@ -20,8 +20,6 @@ public class GameManager : Singleton<GameManager>
     void Start()
     {
         StartCoroutine(Spawner());
-
-
     }
 
     public void RegisterEnemy(Enemy enemy)

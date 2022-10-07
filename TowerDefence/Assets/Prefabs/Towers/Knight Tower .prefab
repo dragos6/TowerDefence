@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7299086936834903012}
   - component: {fileID: 6241501514858435307}
+  - component: {fileID: 8296812271821307780}
   m_Layer: 8
   m_Name: 'Knight Tower '
   m_TagString: Tower
@@ -84,3 +85,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8296812271821307780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6742924391954359554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39aa856145a97946ad268e1c517e868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 2
+  attackRadius: 4
+  projectile: {fileID: -4382303028894317661, guid: ede5ec0af01c4a04badaa5fa9278c250, type: 3}

@@ -53,7 +53,6 @@ public class TowerManager : MonoBehaviour
     {
         enableDragSprite(towerSelected.DragSprite) ;
         towerBtnPressed = towerSelected;
-        Debug.Log("Pressed " + towerBtnPressed.gameObject);
     }
 
     public void enableDragSprite(Sprite sprite)
